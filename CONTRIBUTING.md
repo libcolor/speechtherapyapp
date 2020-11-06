@@ -8,3 +8,4 @@
 * Add your changes
 * Update README when needed
 * Submit a pull request to upstream repo
+* Add description of your changes
