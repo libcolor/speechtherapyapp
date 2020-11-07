@@ -9,3 +9,4 @@
 * Update README when needed
 * Submit a pull request to upstream repo
 * Add description of your changes
+* Ensure tests are passing
