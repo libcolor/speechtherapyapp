@@ -10,3 +10,4 @@
 * Submit a pull request to upstream repo
 * Add description of your changes
 * Ensure tests are passing
+* Ensure branch is mergeable
