@@ -8,3 +8,6 @@ import subprocess as sp
 import sys
 import re
 from concurrent.futures import ProcessPoolExecutor
+
+import magic
+from huepy import bold, green, red
