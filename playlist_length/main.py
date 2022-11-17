@@ -15,3 +15,6 @@ from tqdm import tqdm
 
 from playlist_length.utils import pluralize, CacheUtil
 from playlist_length.__version__ import __version__
+
+
+REGEX_MAP = {
