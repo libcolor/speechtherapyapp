@@ -18,3 +18,7 @@ from playlist_length.__version__ import __version__
 
 
 REGEX_MAP = {
+    'video': re.compile(r'video|Video'),
+    'audio': re.compile(r'audio|Audio'),
+    'audio/video': re.compile(r'audio|video|Audio|Video'),
+}
