@@ -23,3 +23,5 @@ REGEX_MAP = {
     'audio/video': re.compile(r'audio|video|Audio|Video'),
 }
 
+
+def store_in_cache(queue, cache):
