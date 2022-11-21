@@ -25,3 +25,5 @@ REGEX_MAP = {
 
 
 def store_in_cache(queue, cache):
+    while True:
+        result = queue.get()
