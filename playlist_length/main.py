@@ -29,3 +29,4 @@ def store_in_cache(queue, cache):
         result = queue.get()
         if result is None:
             break
+        file_hash, value = result
