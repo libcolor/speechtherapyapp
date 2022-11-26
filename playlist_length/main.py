@@ -30,3 +30,5 @@ def store_in_cache(queue, cache):
         if result is None:
             break
         file_hash, value = result
+        cache.cache[file_hash] = value
+    cache.save()
