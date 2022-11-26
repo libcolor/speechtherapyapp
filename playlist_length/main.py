@@ -32,3 +32,4 @@ def store_in_cache(queue, cache):
         file_hash, value = result
         cache.cache[file_hash] = value
     cache.save()
+
