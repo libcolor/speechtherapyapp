@@ -36,3 +36,5 @@ def store_in_cache(queue, cache):
 
 def duration(args):
     """
+    Return the duration of the the file in minutes.
+    """
