@@ -33,3 +33,6 @@ def store_in_cache(queue, cache):
         cache.cache[file_hash] = value
     cache.save()
 
+
+def duration(args):
+    """
