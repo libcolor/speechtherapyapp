@@ -38,3 +38,5 @@ def duration(args):
     """
     Return the duration of the the file in minutes.
     """
+    file_path, queue, cache = args
+    file_name = os.path.basename(file_path)
