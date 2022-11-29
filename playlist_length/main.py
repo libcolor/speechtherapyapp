@@ -40,3 +40,4 @@ def duration(args):
     """
     file_path, queue, cache = args
     file_name = os.path.basename(file_path)
+    file_hash = CacheUtil.get_hash(file_name)
