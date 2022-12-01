@@ -43,3 +43,4 @@ def duration(args):
     file_hash = CacheUtil.get_hash(file_name)
 
     if file_hash in cache:
+        return cache[file_hash]
