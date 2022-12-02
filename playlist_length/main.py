@@ -44,3 +44,6 @@ def duration(args):
 
     if file_hash in cache:
         return cache[file_hash]
+
+    if not is_media_file(file_path):
+        length = 0
