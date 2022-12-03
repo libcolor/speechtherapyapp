@@ -49,3 +49,5 @@ def duration(args):
         length = 0
     else:
         command = [
+            'ffprobe',
+            '-loglevel',
