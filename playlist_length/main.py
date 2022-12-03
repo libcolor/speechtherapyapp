@@ -47,3 +47,5 @@ def duration(args):
 
     if not is_media_file(file_path):
         length = 0
+    else:
+        command = [
