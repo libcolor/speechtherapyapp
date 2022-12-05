@@ -51,3 +51,6 @@ def duration(args):
         command = [
             'ffprobe',
             '-loglevel',
+            'quiet',
+            '-show_entries',
+            'format=duration',
