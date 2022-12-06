@@ -54,3 +54,7 @@ def duration(args):
             'quiet',
             '-show_entries',
             'format=duration',
+            '-print_format',
+            'default=nokey=1:noprint_wrappers=1',
+            '-i',
+            file_path
