@@ -58,3 +58,6 @@ def duration(args):
             'default=nokey=1:noprint_wrappers=1',
             '-i',
             file_path
+        ]
+        pipe = sp.Popen(command, stdout=sp.PIPE, stderr=sp.STDOUT)
+        result, error = pipe.communicate()
