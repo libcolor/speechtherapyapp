@@ -62,3 +62,8 @@ def duration(args):
         pipe = sp.Popen(command, stdout=sp.PIPE, stderr=sp.STDOUT)
         result, error = pipe.communicate()
         length = 0 if not result else float(result) / 60
+    queue.put((file_hash, length))
+    return length
+
+
+def is_media_file(file_path):
