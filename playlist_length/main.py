@@ -67,3 +67,4 @@ def duration(args):
 
 
 def is_media_file(file_path):
+    try:
