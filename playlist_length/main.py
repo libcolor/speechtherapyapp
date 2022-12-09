@@ -69,3 +69,5 @@ def duration(args):
 def is_media_file(file_path):
     try:
         match_object = media_type.match(magic.from_file(file_path, mime=True))  # noqa
+    except IOError:
+        # Probably this directory contains some file/folder that the
