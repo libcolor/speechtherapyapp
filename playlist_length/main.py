@@ -71,3 +71,6 @@ def is_media_file(file_path):
         match_object = media_type.match(magic.from_file(file_path, mime=True))  # noqa
     except IOError:
         # Probably this directory contains some file/folder that the
+        # user don't have permission to read or maybe it is a symlinked
+        # file.
+        media_file = False
