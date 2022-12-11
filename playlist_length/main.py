@@ -74,3 +74,4 @@ def is_media_file(file_path):
         # user don't have permission to read or maybe it is a symlinked
         # file.
         media_file = False
+    else:
