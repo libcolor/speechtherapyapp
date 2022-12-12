@@ -75,3 +75,5 @@ def is_media_file(file_path):
         # file.
         media_file = False
     else:
+        media_file = bool(match_object)
+    return media_file
