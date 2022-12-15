@@ -83,3 +83,4 @@ def get_all_files(BASE_PATH, no_subdir):
 
     def with_subdir():
         return (
+            os.path.join(root, file)
