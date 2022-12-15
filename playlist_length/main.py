@@ -78,3 +78,8 @@ def is_media_file(file_path):
         media_file = bool(match_object)
     return media_file
 
+
+def get_all_files(BASE_PATH, no_subdir):
+
+    def with_subdir():
+        return (
