@@ -84,3 +84,7 @@ def get_all_files(BASE_PATH, no_subdir):
     def with_subdir():
         return (
             os.path.join(root, file)
+            for root, _, files in os.walk(BASE_PATH)
+            for file in files
+            if file[0] != '.'
+        )
