@@ -90,3 +90,6 @@ def get_all_files(BASE_PATH, no_subdir):
         )
 
     def without_subdir():
+        for file in os.listdir(BASE_PATH):
+            file_path = os.path.join(BASE_PATH, file)
+            if os.path.isfile(file_path) and not os.path.islink(file_path):
