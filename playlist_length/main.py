@@ -88,3 +88,5 @@ def get_all_files(BASE_PATH, no_subdir):
             for file in files
             if file[0] != '.'
         )
+
+    def without_subdir():
