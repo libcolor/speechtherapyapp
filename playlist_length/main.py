@@ -96,3 +96,4 @@ def get_all_files(BASE_PATH, no_subdir):
                 yield file_path
 
     all_files = without_subdir() if no_subdir else with_subdir()
+    return tuple(all_files)
