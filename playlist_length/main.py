@@ -97,3 +97,7 @@ def get_all_files(BASE_PATH, no_subdir):
 
     all_files = without_subdir() if no_subdir else with_subdir()
     return tuple(all_files)
+
+
+def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
+    if not os.path.isdir(BASE_PATH):
