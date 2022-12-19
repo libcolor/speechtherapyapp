@@ -101,3 +101,6 @@ def get_all_files(BASE_PATH, no_subdir):
 
 def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
     if not os.path.isdir(BASE_PATH):
+        return bold(red('Error: This doesn\'t seem to be a valid directory.'))
+
+    all_files = get_all_files(BASE_PATH, no_subdir)
