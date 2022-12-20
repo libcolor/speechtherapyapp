@@ -107,3 +107,5 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
     max_workers = multiprocessing.cpu_count() + 1
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         sys.stdout.write('\n')
+        cache = cache_ob.cache
+        args = ((file, queue, cache) for file in all_files)
