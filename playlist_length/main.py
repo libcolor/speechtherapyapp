@@ -104,3 +104,6 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
         return bold(red('Error: This doesn\'t seem to be a valid directory.'))
 
     all_files = get_all_files(BASE_PATH, no_subdir)
+    max_workers = multiprocessing.cpu_count() + 1
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        sys.stdout.write('\n')
