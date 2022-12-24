@@ -113,3 +113,8 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
             tqdm(
                 executor.map(duration, args),
                 total=len(all_files),
+                desc='Processing files',
+            )
+        )
+
+    length = round(sum(result))
