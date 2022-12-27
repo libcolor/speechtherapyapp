@@ -125,3 +125,5 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
         return bold(red('Seems like there are no {} files. ¯\_(ツ)_/¯'.format(media_type)))
     elif length < 60:
         minutes_string = pluralize(length, base='minute', suffix='s')
+        result = 'Length of all {} is {}.'.format(media_type, minutes_string)
+    else:
