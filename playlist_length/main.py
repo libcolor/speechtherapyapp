@@ -131,3 +131,4 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
         hours_string = pluralize(hours, base='hour', suffix='s')
         minutes_string = pluralize(minutes, base='minute', suffix='s')
         result = 'Length of all {} is {} and {}.'.format(
+            media_type, hours_string, minutes_string
