@@ -134,3 +134,6 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
             media_type, hours_string, minutes_string
         )
     return bold(green(result))
+
+
+def get_parser():
