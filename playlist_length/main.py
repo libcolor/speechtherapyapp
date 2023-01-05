@@ -138,3 +138,4 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
 
 def get_parser():
     parser = argparse.ArgumentParser(
+        description='''
