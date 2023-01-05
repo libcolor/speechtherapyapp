@@ -139,3 +139,6 @@ def calculate_length(BASE_PATH, no_subdir, media_type, queue, cache_ob):
 def get_parser():
     parser = argparse.ArgumentParser(
         description='''
+        Output the total duration of all the audio and video files in the given directory.
+        '''
+    )
