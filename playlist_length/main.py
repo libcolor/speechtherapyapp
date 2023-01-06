@@ -142,3 +142,6 @@ def get_parser():
         Output the total duration of all the audio and video files in the given directory.
         '''
     )
+    parser.add_argument(
+        'path',
+        help='Path to a directory. Defaults to current directory',
