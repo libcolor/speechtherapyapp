@@ -145,3 +145,4 @@ def get_parser():
     parser.add_argument(
         'path',
         help='Path to a directory. Defaults to current directory',
+        type=str,
