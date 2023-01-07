@@ -146,3 +146,4 @@ def get_parser():
         'path',
         help='Path to a directory. Defaults to current directory',
         type=str,
+        nargs='?',
