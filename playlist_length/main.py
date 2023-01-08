@@ -149,3 +149,4 @@ def get_parser():
         nargs='?',
         default='.',
     )
+    parser.add_argument(
