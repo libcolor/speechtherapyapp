@@ -150,3 +150,10 @@ def get_parser():
         default='.',
     )
     parser.add_argument(
+        '--no-subdir',
+        help='Don\'t look for videos in sub directories.',
+        action='store_true',
+    )
+    parser.add_argument(
+        '--media-type',
+        help='Type of media file to you want to check.',
