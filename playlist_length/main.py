@@ -159,3 +159,5 @@ def get_parser():
         help='Type of media file to you want to check.',
         type=str,
         choices=['audio', 'video', 'both'],
+        default='video',
+    )
