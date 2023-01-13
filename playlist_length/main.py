@@ -162,3 +162,5 @@ def get_parser():
         default='video',
     )
     parser.add_argument(
+        '-v',
+        '--version',
