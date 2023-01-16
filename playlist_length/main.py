@@ -164,3 +164,4 @@ def get_parser():
     parser.add_argument(
         '-v',
         '--version',
+        action='version',
