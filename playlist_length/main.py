@@ -165,3 +165,6 @@ def get_parser():
         '-v',
         '--version',
         action='version',
+        version='%(prog)s {version}'.format(version=__version__),
+    )
+    return parser
