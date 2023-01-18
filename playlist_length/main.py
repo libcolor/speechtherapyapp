@@ -168,3 +168,6 @@ def get_parser():
         version='%(prog)s {version}'.format(version=__version__),
     )
     return parser
+
+
+def main():
