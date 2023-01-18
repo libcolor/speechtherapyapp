@@ -171,3 +171,5 @@ def get_parser():
 
 
 def main():
+    try:
+        parser = get_parser()
