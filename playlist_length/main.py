@@ -173,3 +173,7 @@ def get_parser():
 def main():
     try:
         parser = get_parser()
+        args = parser.parse_args()
+        if args.media_type == 'both':
+            args.media_type = 'audio/video'
+        globals()['media_type'] = REGEX_MAP[args.media_type]
