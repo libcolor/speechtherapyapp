@@ -177,3 +177,5 @@ def main():
         if args.media_type == 'both':
             args.media_type = 'audio/video'
         globals()['media_type'] = REGEX_MAP[args.media_type]
+        cache_ob = CacheUtil(args.path, args.media_type)
+        manager = multiprocessing.Manager()
