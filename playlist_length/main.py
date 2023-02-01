@@ -179,3 +179,6 @@ def main():
         globals()['media_type'] = REGEX_MAP[args.media_type]
         cache_ob = CacheUtil(args.path, args.media_type)
         manager = multiprocessing.Manager()
+        queue = manager.Queue()
+        consumer = multiprocessing.Process(target=store_in_cache, args=(queue, cache_ob))
+        consumer.start()
