@@ -182,3 +182,5 @@ def main():
         queue = manager.Queue()
         consumer = multiprocessing.Process(target=store_in_cache, args=(queue, cache_ob))
         consumer.start()
+        result = calculate_length(
+            args.path, args.no_subdir, args.media_type, queue, cache_ob
