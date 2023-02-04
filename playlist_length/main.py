@@ -184,3 +184,5 @@ def main():
         consumer.start()
         result = calculate_length(
             args.path, args.no_subdir, args.media_type, queue, cache_ob
+        )
+        consumer.join()
