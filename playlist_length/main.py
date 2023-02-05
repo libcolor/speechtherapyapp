@@ -190,3 +190,5 @@ def main():
         sys.stdout.write('\nPlease wait... exiting gracefully!\n')
     else:
         sys.stdout.write('\n{}\n\n'.format(result))
+    finally:
+        sys.exit()
