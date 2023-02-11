@@ -16,3 +16,7 @@ def pluralize(number, base, suffix):
 
 class CacheUtil:
     def __init__(self, path, media_type):
+        self.media_type = media_type
+        self.dir_path = os.path.abspath(path)
+        self.cache_file_path = self._get_cache_file_path()
+        self.cache = self._get_cached_data()
