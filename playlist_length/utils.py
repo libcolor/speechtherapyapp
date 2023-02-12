@@ -20,3 +20,6 @@ class CacheUtil:
         self.dir_path = os.path.abspath(path)
         self.cache_file_path = self._get_cache_file_path()
         self.cache = self._get_cached_data()
+
+    @staticmethod
+    def get_hash(string):
