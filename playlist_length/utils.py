@@ -26,3 +26,6 @@ class CacheUtil:
         return hashlib.md5(string.encode('utf-8')).hexdigest()
 
     def _get_cache_file_path(self):
+        file_name = self.get_hash(self.dir_path + self.media_type)
+        cache_file_path = os.path.join(CACHE_DIR, file_name)
+        return cache_file_path
