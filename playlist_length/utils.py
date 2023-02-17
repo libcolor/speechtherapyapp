@@ -29,3 +29,5 @@ class CacheUtil:
         file_name = self.get_hash(self.dir_path + self.media_type)
         cache_file_path = os.path.join(CACHE_DIR, file_name)
         return cache_file_path
+
+    def _get_cached_data(self):
