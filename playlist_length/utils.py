@@ -31,3 +31,4 @@ class CacheUtil:
         return cache_file_path
 
     def _get_cached_data(self):
+        if not os.path.exists(self.cache_file_path):
