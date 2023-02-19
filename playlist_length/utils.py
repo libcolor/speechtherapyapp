@@ -34,3 +34,6 @@ class CacheUtil:
         if not os.path.exists(self.cache_file_path):
             with open(self.cache_file_path, 'wb') as file:
                 data = {}
+                pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
+        else:
+            with open(self.cache_file_path, 'rb') as file:
