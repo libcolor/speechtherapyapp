@@ -32,3 +32,5 @@ class CacheUtil:
 
     def _get_cached_data(self):
         if not os.path.exists(self.cache_file_path):
+            with open(self.cache_file_path, 'wb') as file:
+                data = {}
