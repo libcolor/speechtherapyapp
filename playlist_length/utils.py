@@ -39,3 +39,7 @@ class CacheUtil:
             with open(self.cache_file_path, 'rb') as file:
                 data = pickle.load(file)
         return data
+
+    def save(self):
+        with open(self.cache_file_path, 'wb') as file:
+            pickle.dump(self.cache, file, protocol=pickle.HIGHEST_PROTOCOL)
