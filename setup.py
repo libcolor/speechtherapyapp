@@ -10,3 +10,5 @@ requires = (
     'tqdm>=4.19.9',
     'futures;python_version<"3.4"',
 )
+
+setup(
