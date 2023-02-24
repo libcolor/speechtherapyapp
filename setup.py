@@ -9,3 +9,4 @@ requires = (
     'python-magic>=0.4.15',
     'tqdm>=4.19.9',
     'futures;python_version<"3.4"',
+)
