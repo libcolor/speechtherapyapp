@@ -23,3 +23,4 @@ setup(
     packages=['playlist_length'],
     install_requires=requires,
     license='MIT License',
+    keywords='videolength playlist-length',
