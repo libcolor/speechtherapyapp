@@ -20,3 +20,6 @@ setup(
     author='Karan Suthar',
     author_email='karansthr97@gmail.com',
     url='http://github.com/karansthr/playlist-length',
+    packages=['playlist_length'],
+    install_requires=requires,
+    license='MIT License',
