@@ -30,3 +30,7 @@ setup(
     project_urls={
         'Bug Reports': 'https://github.com/karansthr/playlist-length/issues',
         'Source': 'https://github.com/karansthr/playlist-length/',
+        'Blog': 'https://fosstack.com/tips/videos-playlist-length-calculator/',
+        'About': 'https://fosstack.com/about/'
+    }
+)
