@@ -27,3 +27,6 @@ setup(
     entry_points={
         'console_scripts': ['playlistlen=playlist_length.main:main'],
     },
+    project_urls={
+        'Bug Reports': 'https://github.com/karansthr/playlist-length/issues',
+        'Source': 'https://github.com/karansthr/playlist-length/',
