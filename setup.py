@@ -24,3 +24,5 @@ setup(
     install_requires=requires,
     license='MIT License',
     keywords='videolength playlist-length',
+    entry_points={
+        'console_scripts': ['playlistlen=playlist_length.main:main'],
