@@ -26,3 +26,4 @@ setup(
     keywords='videolength playlist-length',
     entry_points={
         'console_scripts': ['playlistlen=playlist_length.main:main'],
+    },
